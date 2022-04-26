@@ -1,6 +1,9 @@
-import { ChakraProvider, extendTheme } from "@chakra-ui/react";
+import { ChakraProvider, extendTheme, theme } from "@chakra-ui/react";
 
 const newTheme = extendTheme({
+  fonts: {
+    heading: "Inter, serif",
+  },
   colors: {
     brand: {
       1: "#C32361",
@@ -23,20 +26,22 @@ const newTheme = extendTheme({
       2: "#49ADF5",
     },
   },
+  radii: {
+    sm: "0.5rem",
+  },
   components: {
     Heading: {
       variants: {
-        h1: { fontSize: '5xl', fontWeight: 'bold'},
-      }
+        h1: { fontSize: "5xl", fontWeight: "bold" },
+      },
     },
     Text: {
       variants: {
-        text_1: { fontSize: 'lg', fontWeight: 'regular' }
-      }
-    }
-  }
+        text_1: { fontSize: "lg", fontWeight: "regular" },
+      },
+    },
+  },
 });
-
 
 function GlobalStyleProvider({ children }) {
   return <ChakraProvider theme={newTheme}>{children}</ChakraProvider>;

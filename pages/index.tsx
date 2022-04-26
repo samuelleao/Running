@@ -27,11 +27,10 @@ export default function Home() {
         paddingY={["2rem", "2rem", "2rem", "0"]}
         alignItems="center"
         justifyContent="center"
-        
       >
         <Container maxW="container.lg">
           <Flex justifyContent="space-between" alignItems="center" flexWrap="wrap" gap={["2rem", "2rem", "2rem", "0"]}>
-            <Box w={["100%", "100%", "100%", "50%"]} display="flex" flexDirection="column" gap="2rem">
+            <Box w={["100%", "100%", "100%", "50%"]} display="flex" flexDir="column" gap="2rem">
               <Logo />
               <Heading1 variant="h1" color="grey.6">
                 Connecting developers in an amazing{" "}
@@ -44,7 +43,7 @@ export default function Home() {
               </Text>
               <Button>Register Now</Button>
             </Box>
-            <Form w={["100%", "100%", "50%", "40%"]} borderRadius="8px">
+            <Form w={["100%", "100%", "50%", "40%"]} borderRadius="sm">
               <Text fontSize="1.25rem" color="grey.6">Sign in to Dribbble</Text>
               <Flex gap="1rem">
                 <Button google>Sign in with Google</Button>
@@ -52,7 +51,7 @@ export default function Home() {
               </Flex>
               <DividerText text="Or" />
               <Input type="text" placeholder="Username" icon={<FaUser />} />
-              <Flex flexDirection="column" gap="0.5rem">
+              <Flex flexDir="column" gap="2">
                 <Input
                   type="password"
                   placeholder="Password"
