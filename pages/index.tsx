@@ -11,12 +11,15 @@ import { Heading1 } from "../components/headings";
 import { Button } from "../components/buttons";
 import { Input } from "../components/inputs";
 import { FaUser, FaLock } from "react-icons/fa";
+import { BsTwitter } from 'react-icons/bs'
 import { Logo } from "../components/logo";
 import { DividerText } from '../components/dividerText'
+import { HeadPage } from '../components/head'
 
 export default function Home() {
   return (
     <>
+      <HeadPage title="Login" />
       <Flex
         as="main"
         bg="grey.1"
@@ -45,7 +48,7 @@ export default function Home() {
               <Text fontSize="1.25rem" color="grey.6">Sign in to Dribbble</Text>
               <Flex gap="1rem">
                 <Button google>Sign in with Google</Button>
-                <Button onlyIcon={<FaUser />}>Sign in with Twitter</Button>
+                <Button onlyIcon={<BsTwitter />}>Sign in with Twitter</Button>
               </Flex>
               <DividerText text="Or" />
               <Input type="text" placeholder="Username" icon={<FaUser />} />
