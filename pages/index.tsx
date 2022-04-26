@@ -44,7 +44,7 @@ export default function Home() {
               </Text>
               <Button>Register Now</Button>
             </Box>
-            <Form w={["100%", "100%", "50%", "40%"]}>
+            <Form w={["100%", "100%", "50%", "40%"]} borderRadius="8px">
               <Text fontSize="1.25rem" color="grey.6">Sign in to Dribbble</Text>
               <Flex gap="1rem">
                 <Button google>Sign in with Google</Button>
