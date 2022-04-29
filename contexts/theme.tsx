@@ -25,6 +25,10 @@ const newTheme = extendTheme({
       1: "#3F96D4",
       2: "#49ADF5",
     },
+    feedback: {
+      sucess: "#42d388",
+      error: "#d34242"
+    }
   },
   radii: {
     sm: "0.5rem",
@@ -32,7 +36,9 @@ const newTheme = extendTheme({
   components: {
     Heading: {
       variants: {
-        h1: { fontSize: "5xl", fontWeight: "bold" },
+        h1: { fontSize: ["3xl", "3xl", "3xl", "5xl"], fontWeight: "bold" },
+        h2: { fontSize: "4xl", fontWeight: "bold" },
+        h3: { fontSize: "3xl", fontWeight: "bold" },
       },
     },
     Text: {

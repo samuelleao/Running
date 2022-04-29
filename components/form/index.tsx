@@ -1,4 +1,4 @@
-import React, { ReactNode } from "react";
+import React from "react";
 import { Box } from "@chakra-ui/react";
 
 export const Form = ({ children, ...props }): JSX.Element => {
@@ -7,7 +7,7 @@ export const Form = ({ children, ...props }): JSX.Element => {
       as="form"
       w="40%"
       bg="grey.3"
-      p="2rem"
+      p={["1rem","2rem","2rem","2rem"]}
       display="flex"
       flexDirection="column"
       gap="2rem"

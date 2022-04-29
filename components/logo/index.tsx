@@ -1,4 +1,4 @@
-import React, { ReactNode } from "react";
+import React from "react";
 import { Image } from '@chakra-ui/react'
 
 export const Logo = (): JSX.Element => {
@@ -7,8 +7,8 @@ export const Logo = (): JSX.Element => {
       src="img/logo.svg"
       alt="logo"
       title="Logo"
-      width="257px"
-      height="65px"
+      width="160px"
+      height="40px"
     />
   );
 };

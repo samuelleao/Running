@@ -1,8 +1,8 @@
 import React, { ReactNode } from "react";
 import { BsGoogle } from "react-icons/bs";
-import { Button as ButtonChakra } from "@chakra-ui/react";
+import { Button as ButtonChakra, ButtonProps } from "@chakra-ui/react";
 
-interface iprops {
+interface iprops extends ButtonProps {
   disable?: boolean;
   children: ReactNode;
   google?: boolean,
@@ -14,7 +14,7 @@ export const Button = ({
   disable,
   google,
   onlyIcon,
-  ...props
+  ...rest
 }: iprops): JSX.Element => {
    
   if (disable) {
@@ -24,9 +24,9 @@ export const Button = ({
         paddingLeft="3rem"
         paddingRight="3rem"
         h="50px"
-        color="grey.6"
+        color="grey.5"
         size="lg"
-        w="100%"
+
         border="1px solid brand.2"
         _hover={{
           background: "brand.4",
@@ -40,7 +40,7 @@ export const Button = ({
           borderColor: "grey.4",
           boxShadow: "none",
         }}
-        {...props}
+        {...rest}
       >
         {children}
       </ButtonChakra>
@@ -52,12 +52,12 @@ export const Button = ({
     return (
       <ButtonChakra
         bg="google.1"
-        paddingLeft="3rem"
-        paddingRight="3rem"
+        paddingInline="3rem"
         h="50px"
         color="grey.6"
         size="lg"
         w="max-content"
+        maxW="100%"
         leftIcon={<BsGoogle />}
         border="1px solid google.1"
         _hover={{
@@ -70,7 +70,7 @@ export const Button = ({
           borderColor: "grey.4",
           boxShadow: "none",
         }}
-        {...props}
+        {...rest}
       >
         {children}
       </ButtonChakra>
@@ -81,12 +81,12 @@ export const Button = ({
     return (
       <ButtonChakra
         bg="grey.2"
-        paddingLeft="1.5rem"
-        paddingRight="1.5rem"
+        paddingInline="1.5rem"
         h="50px"
         color="grey.6"
         size="lg"
         w="max-content"
+        maxW="100%"
         border="1px solid grey.2"
         _hover={{
           background: "grey.4",
@@ -98,7 +98,7 @@ export const Button = ({
           borderColor: "grey.4",
           boxShadow: "none",
         }}
-        {...props}
+        {...rest}
       >
         {onlyIcon}
       </ButtonChakra>
@@ -114,6 +114,7 @@ export const Button = ({
       color="grey.6"
       size="lg"
       w="max-content"
+      maxW="100%"
       border="1px solid brand.2"
       _hover={{
         background: "brand.2",
@@ -125,7 +126,7 @@ export const Button = ({
         borderColor: "grey.2",
         boxShadow: "none",
       }}
-      {...props}
+      {...rest}
     >
       {children}
     </ButtonChakra>
