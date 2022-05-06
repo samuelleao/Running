@@ -8,8 +8,6 @@
       "src/styles/*": ["styles/*"],
       "src/public/*": ["public/*"],
       "src/contexts/*": ["contexts/*"],
-      "src/lib/*": ["lib/*"],
-      "src/utils/*": ["utils/*"]
     },
     "allowJs": true,
     "skipLibCheck": true,
