@@ -7,6 +7,7 @@ import { HeadPage } from "src/components/Head";
 import { FormLogin } from "src/components/FormLogin";
 
 export default function Home() {
+  
   return (
     <>
       <HeadPage title="Login" />
