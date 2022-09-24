@@ -2,7 +2,7 @@ import { ChakraProvider, extendTheme, theme } from "@chakra-ui/react";
 
 const newTheme = extendTheme({
   fonts: {
-    heading: "Inter, serif",
+    heading: "Inter, sans-serif",
   },
   colors: {
     brand: {

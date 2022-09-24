@@ -13,9 +13,9 @@ export default function Home() {
       <HeadPage title="Login" />
       <Flex
         as="main"
-        bg="grey.1"
-        h={["auto", "auto", "auto", "100vh"]}
-        paddingY={["2rem", "2rem", "2rem", "0"]}
+        bg="grey.2"
+        minH={"100vh"}
+        paddingY={["4rem", "0"]}
         alignItems="center"
         justifyContent="center"
       >

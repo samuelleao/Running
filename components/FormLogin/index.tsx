@@ -53,7 +53,7 @@ export const FormLogin = () => {
         <Button w={["100%", "100%", "auto", "auto"]} google>
           Sign in with Google
         </Button>
-        <Button w={["100%", "100%", "auto", "auto"]} onlyIcon={<BsTwitter />}>
+        <Button w={["100%", "100%", "auto", "auto"]} onlyIcon={<BsTwitter />} aria-label="Sign in with Twitter">
           Sign in with Twitter
         </Button>
       </Flex>
